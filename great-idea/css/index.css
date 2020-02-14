@@ -65,11 +65,13 @@ h1, h2, h3, h4, h5 {
 
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
 
+/* common */
+
 body {
 	margin: 0px 510px;
 }
 
-div.head nav{
+div.head nav {
 	margin-top: 35px;
 	display: flex;
 	justify-content: space-between;
@@ -80,55 +82,154 @@ div.head nav a {
 	text-decoration: none;
 }
 
+/* index.html */
+
+div.top1 {
+	margin-top: 70px;
+	margin-bottom: 70px;
+	display: flex;
+	justify-content: space-between;
+}
+
 div.top1 div {
-	display: inline-block;
+	margin-top: 60px;
+	margin-left: 100px;
+	display: flex;
+	flex-direction: column;
+}
+
+div.top1 div h1 {
 	text-align: center;
 	font-size: 70px;
-	margin: 170px 80px 60px 130px;
-	position: relative;
-	bottom: 30px;
 }
 
-div.top1 button {
+div.top1 div button {
 	background-color: none;
 	border: black solid 1px;
-	padding: 7px 40px;
 	text-align: center;
 	text-decoration: none;
-	display: inline-block;
-	position: relative;
-	bottom: 35px;
-}
-
-div.top1 img {
-	display: inline-block;
+	padding: 5px;
+	margin: 0px 70px;
 }
 
 div.mid {
 	border-top-style: solid;
 	border-bottom-style: solid;
 	border-width: 1px;
-	text-align: center;
+	display: flex;
+	flex-direction: column;
+}
+
+div.mid .top, div.mid .bottom {
+	display: flex;
 }
 
 div.mid .top section, div.mid .bottom section {
-	display: inline-block;
-	text-align: left;
-	width: 48%;
-	margin: 40px 7.9px;
+	margin-bottom: 35px;
+	margin-top: 35px;
 }
 
 div.mid .bottom section {
-	margin: 40px 4.7px;
-	width: 32%;
+	margin-right: 15px;
 }
 
-footer {
-	margin: 40px 0px;
+footer.footer1 {
+	margin-top: 35px;
+	display: flex;
+	flex-direction: column;
 }
 
-footer p {
-	text-align: center;
-	padding: 50px;
-	box-sizing: border-box;
+footer.footer1 p {
+	margin-bottom: 100px;
+	margin-top: 50px;
+	align-self: center;
+}
+
+/* Services.html */
+
+div.top2 {
+	margin-top: 20px;
+}
+
+div.top2 h1 {
+	font-size: 25px;
+	margin-top: 25px;
+}
+
+div.top2, div.mid2 {
+	display: flex;
+	flex-direction: column;
+}
+
+div.mid2 {
+	display: flex;
+	border-top: black solid 1px;
+	border-bottom: black solid 1px;
+	margin-top: 40px;
+	margin-bottom: 10px;
+	padding-bottom: 40px;
+}
+
+div.mid2 .top, div.mid2 .mid3, div.mid2 .bottom {
+	display: flex;
+	justify-content: space-between;
+	align-content: space-between;
+}
+
+div.mid2 section {
+	display: flex;
+	flex-direction: column;
+	background: #f4f3f4;
+	border: black solid 1px;
+	padding: 10px;
+	width: 410px;
+	margin-top: 40px;
+}
+
+div.mid2 h2 {
+	margin-top: 5px;
+}
+
+div.mid2 button {
+	align-self: flex-start;
+	background-color: #ffffff;
+	border: black solid 1px;
+	border-radius: 5px;
+	padding: 7px 30px;
+	font-size: 12px;
+	margin-top: 15px;
+	margin-bottom: 5px;
+	margin-left: 5px;
+}
+
+footer.footer2 {
+	margin-top: 40px;
+	display: flex;
+	flex-direction: column;
+}
+
+footer.footer2 div {
+	display: flex;
+	justify-content: space-between;
+}
+
+footer.footer2 div div{
+	display: flex;
+	flex-direction: column;
+	width: 400px;
+}
+
+footer.footer2 div div ul li {
+	list-style-type: square;
+	margin-top: 15px;
+	margin-left: 17px;
+}
+
+footer.footer2 p {
+	margin-bottom: 15px;
+}
+
+footer.footer2 p.copyright {
+	margin-top: 100px;
+	align-self: center;
 }
